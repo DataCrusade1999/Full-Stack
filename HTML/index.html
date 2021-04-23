@@ -9,8 +9,10 @@
         <header>
             <nav>
                 Navbar
-
             </nav>
+
+            <img height="50px" src="C:\Users\ashut\Full-Stack\HTML\here.jpg" alt="">
+            <p>we can also source image from internet i.e we can put url in src attribute of img</p>
         </header>
         <main>
             <article>
@@ -22,6 +24,7 @@
                 <h5>New York Times</h5>
                 <h6>New York Times</h6>
                 <form action="">
+                    <textarea name="message" id="" cols="30" rows="10"></textarea>
                     <input name ="king" type="email" placeholder="Email">
                     <input name="henry" type="date" placeholder="enter todays date">
                     <input name="john" type="checkbox"> Choice 1
@@ -30,6 +33,12 @@
 <!-- we can check only one of the radio(round) at once beacause they belong to same name this property is specific to radio.
 otherwise we couldn't have i.e this cannot be done with checkboxes there we can have same name but still can check both boxes.
 name is an important attribute it is this name which we associate the entered data.-->
+                    <button type="submit">save</button>
+
+                    <select name="states" id="">
+                        <option value="Ashutosh">Ashutosh</option>
+                        <option value="Pandey">Pandey</option>
+                    </select>
                 </form>
                 <ul>
                     <li>step 1</li>
@@ -55,7 +64,15 @@ name is an important attribute it is this name which we associate the entered da
 
                 </div>
             </section>
+            <audio src="Song.m4a" controls></audio>
+            <audio src="Song.m4a" autoplay></audio>
 
+            <video src="" height="500px" controls></video>
+            <video src="" height="500px" autoplay></video>
+            <p>embedded a video from YouTube</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/BGqGNTIE6HQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>      
+            
         </main>
         <footer>footer</footer>
         
