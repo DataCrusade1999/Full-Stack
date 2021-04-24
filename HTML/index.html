@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Medium</title>
-        
+        <title>Ashutosh Pandey</title>
+        <link rel="stylesheet" href="CSS\app.css">
     </head>
     <body>
-        <h1>My Blogs</h1>
+        <h1>My Website</h1>
         <header>
             <nav>
                 Navbar
@@ -17,19 +17,41 @@
         <main>
             <article>
                 <a  target ="_blank" href="https://google.com">go to google</a>
-                <h1>New York Times</h1>
-                <h2>New York Times</h2>
-                <h3>New York Times</h3>
-                <h4>New York Times</h4>
-                <h5>New York Times</h5>
-                <h6>New York Times</h6>
+                <hr>
+                <h1>Ashutosh Pandey</h1>
+                <h2>Ashutosh Pandey</h2>
+                <h3>Ashutosh Pandey</h3>
+                <h4>Ashutosh Pandey</h4>
+                <h5>Ashutosh Pandey</h5>
+                <h6>Ashutosh Pandey</h6>
+                <hr>
                 <form action="">
-                    <textarea name="message" id="" cols="30" rows="10"></textarea>
-                    <input name ="king" type="email" placeholder="Email">
-                    <input name="henry" type="date" placeholder="enter todays date">
-                    <input name="john" type="checkbox"> Choice 1
-                    <input name="john" type="radio"> Choice 2
-                    <input name="john" type="radio"> Choice 2
+                    <div>
+                        <p>Write text here</p>
+                        <textarea name="message" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <hr>
+                    <div>
+                        <label for="email">Email</label>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; 
+                        <label for="date">Date of Birth</label>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <label for="password">Password</label>
+                    </div>
+                    
+                    <input name ="email" type="email" placeholder="Email" required>
+          
+                    <input name="date" type="date" placeholder="D.O.B" required>
+                    
+                    <input type="password" placeholder="password" required>
+                    <hr>
+
+                    <div>
+                    <input name="checkbox" type="checkbox"> Choice 1
+                    <input name="radio" type="radio"> Choice 2
+                    <input name="radio" type="radio"> Choice 2
+                    </div>
+                    
 <!-- we can check only one of the radio(round) at once beacause they belong to same name this property is specific to radio.
 otherwise we couldn't have i.e this cannot be done with checkboxes there we can have same name but still can check both boxes.
 name is an important attribute it is this name which we associate the entered data.-->
@@ -60,23 +82,27 @@ name is an important attribute it is this name which we associate the entered da
                    printer took a galley of type and scrambled it to make a type specimen book it has?</p>
                    <hr>
             </article>
-            <section>
-                <div>
-                    division
-
-                </div>
-            </section>
-            <audio src="Song.m4a" controls></audio>
-            <audio src="Song.m4a" autoplay></audio>
-
-            <video src="" height="500px" controls></video>
-            <video src="" height="500px" autoplay></video>
+            <div>
+                <p>autoplay attribute isn't working</p>
+                <audio src="Song.m4a" controls></audio>
+                <audio src="Song.m4a" autoplay></audio>
+            </div>
+            <br>
+            <div>
+                <p>autoplay attribute isn't working</p>
+                <video style="margin: auto;" src="" height="200px" controls></video>
+                <video src="" height="200px" autoplay></video>
+            </div>
+           
             <p>embedded a video from YouTube</p>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/BGqGNTIE6HQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
             </iframe>      
             
         </main>
-        <footer>footer</footer>
+        <br>
+        <footer>
+            This is called footer this is where we put links,copyright and all that other stuff
+        </footer>
         
     </body>
 </html>
