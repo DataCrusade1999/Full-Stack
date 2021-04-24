@@ -20,3 +20,30 @@ body {
     font-weight: bold;
     font-family: cursive;
 }
+
+[for = "password" ] {
+    font-weight: bold;
+    font-family: cursive;
+}
+
+[for = "date" ] {
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.text-font {
+    font-family: cursive;
+    font-weight: bold;
+}
+
+input,label,button {
+    display: block;
+}
+
+h2,h3,h4,h5,h6 {
+    display: none;
+}
+
+.text-inline {
+    display: inline-block;
+}
