@@ -2,10 +2,10 @@
 <html>
     <head>
         <title>Ashutosh Pandey</title>
-        <link rel="stylesheet" href="CSS\app.css">
+        <link rel="stylesheet" href="C:\Users\ashut\Full-Stack\CSS\app.css">
     </head>
     <body>
-        <h1>My Website</h1>
+        <h1 class="text-center text-color">My Website</h1>
         <header>
             <nav>
                 Navbar
@@ -16,7 +16,7 @@
         </header>
         <main>
             <article>
-                <a  target ="_blank" href="https://google.com">go to google</a>
+                <a  id="link-color" target ="_blank" href="https://google.com" rel="noreferrer">go to google</a>
                 <hr>
                 <h1>Ashutosh Pandey</h1>
                 <h2>Ashutosh Pandey</h2>
@@ -30,20 +30,30 @@
                         <p>Write text here</p>
                         <textarea name="message" id="" cols="30" rows="10"></textarea>
                     </div>
+
                     <hr>
+
                     <div>
-                        <label for="email">Email</label>
-                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; 
-                        <label for="date">Date of Birth</label>
-                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                        <label for="password">Password</label>
+                        <label for="email">Email:</label>
+                        <input name ="email" type="email" placeholder="Email" required>   
+                        <button type="submit">submit</button>
                     </div>
-                    
-                    <input name ="email" type="email" placeholder="Email" required>
-          
-                    <input name="date" type="date" placeholder="D.O.B" required>
-                    
-                    <input type="password" placeholder="password" required>
+                    <br>
+
+                    <div>
+                        <label for="date">Date of Birth:</label>
+                        <input name="date" type="date" placeholder="D.O.B" required>
+                        <button type="submit">submit</button>
+                    </div>
+                    <br>
+
+                    <div>
+                        <label for="password">Password:</label>
+                        <input type="password" placeholder="password" required>
+                        <button type="submit">submit</button>
+                    </div>
+                    <br>
+
                     <hr>
 
                     <div>
@@ -55,7 +65,7 @@
 <!-- we can check only one of the radio(round) at once beacause they belong to same name this property is specific to radio.
 otherwise we couldn't have i.e this cannot be done with checkboxes there we can have same name but still can check both boxes.
 name is an important attribute it is this name which we associate the entered data.-->
-                    <button type="submit">save</button>
+                    <button type="submit">submit</button>
 
                     <select name="states" id="">
                         <option value="Ashutosh">Ashutosh</option>

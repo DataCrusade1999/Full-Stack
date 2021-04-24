@@ -1,0 +1,22 @@
+
+body {
+    color: rgba(147, 34, 161, 0.829);
+}
+
+.text-center {
+    text-align: center;
+    font-family: cursive;
+}
+
+.text-color {
+    color: black;
+}
+
+#link-color {
+    background-color: antiquewhite;
+}
+
+[for = "email" ] {
+    font-weight: bold;
+    font-family: cursive;
+}
