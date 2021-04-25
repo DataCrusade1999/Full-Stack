@@ -40,10 +40,39 @@ input,label,button {
     display: block;
 }
 
-h2,h3,h4,h5,h6 {
-    display: none;
+h2 {
+    display: inline-block;
+    background: red;
+    position: relative;
+   
+}
+/* position rule positions an html element it can take on several variables.
+the absolute variable means that for other elements the element for which we used absolute positioning is non-existent. in relative 
+positioning every element knows and respect each other position. */
+
+h3 {
+    display: inline-block;
+    background: blue;
+    position: relative;
+    
 }
 
+h4{
+    display: inline-block;
+    background: aquamarine;
+}
+
+h5 {
+    display: inline-block;
+    background: azure;
+
+}
+
+h6 {
+    display: inline-block;
+    background: rgba(0, 255, 42, 0.411);
+}
 .text-inline {
     display: inline-block;
 }
+
