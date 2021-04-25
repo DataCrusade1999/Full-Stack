@@ -41,25 +41,28 @@ input,label,button {
 }
 
 h2 {
-    display: inline-block;
     background: red;
-    position: relative;
+    position: fixed;
+    float: right;
    
 }
 /* position rule positions an html element it can take on several variables.
 the absolute variable means that for other elements the element for which we used absolute positioning is non-existent. in relative 
-positioning every element knows and respect each other position. */
+positioning every element knows and respect each other position. fixed means that element is fixed relative to window */
 
 h3 {
-    display: inline-block;
+    /*display: inline-block;*/
     background: blue;
     position: relative;
+    float: right;
     
 }
 
 h4{
     display: inline-block;
-    background: aquamarine;
+    background: green;
+    /*position: fixed;*/
+   
 }
 
 h5 {
