@@ -9,7 +9,10 @@ body {
 }
 
 .text-color {
-    color: black;
+    font-family: 'Zen Dots', cursive;
+    text-decoration: underline overline;
+    color: red;
+    text-align: center;
 }
 
 #link-color {
@@ -70,6 +73,8 @@ h4{
 h5 {
     display: inline-block;
     background: azure;
+    font-family: 'Zen Dots', cursive;
+    text-decoration: line-through;
 
 }
 
@@ -83,6 +88,7 @@ h6 {
 
 body {
     margin: 0;
+    font-family: 'Zen Dots', cursive;
 }
 
 main {
