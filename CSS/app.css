@@ -89,6 +89,11 @@ h6 {
 body {
     margin: 0;
     font-family: 'Zen Dots', cursive;
+    background: url("./badge.png");
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 main {
@@ -99,4 +104,15 @@ button {
     padding: 1em;
     margin: 1em 0 1em 0;
     border: 1em solid;
+}
+
+form {
+    border: 1px solid black;
+    border-radius: 22px;
+    padding: 1em;
+    box-shadow: 5px 5px 5px 5px black;
+}
+
+a {
+    text-decoration: none;
 }
