@@ -61,3 +61,31 @@ console.log(even);
 /*In JS array can store heterogenous data */
 
 
+/*Operators in JS */
+
+const __ = 4+7;
+console.log(__);
+
+const ___ = 4*7;
+console.log(___);
+
+console.log(4==7);
+
+/* similarly we can have other operators too */
+
+console.log("Ashutosh " + "Pandey"); /*String concatnation */
+
+console.log('10' + 5); /*converts the number into a string */
+
+console.log('10' * 5);  /*converts the string into a number */
+
+console.log('Ashutosh' * 5); /*can't multiply string and a number */
+
+var val1 = 10;
+var val2 = 10;
+
+val1+=val2;/*shorthand operator */
+
+console.log(val1);
+
+console.log(++val1); /*pre increment operator */
