@@ -47,7 +47,7 @@ console.log(shirt.color);
 
 console.log(shirt.shopAddress.state);
 
-/*Object and Array */
+/* Array */
 
 var even = [2,4,6,8];
 console.log(even);
