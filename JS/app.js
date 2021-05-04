@@ -94,12 +94,24 @@ console.log(++val1); /*pre increment operator */
 
 var value = 30;
 
-if (value>=40) {
+if (value>=40 || value<=100) {
     console.log("value is greater than or equal to 40 and the value is " + value);
+    /*beacause this condition is true JS doesn't execute both block below */
     
-} else if(value<=40) {
+} else if(value<=40 && value>=0) {
     console.log("value is less than or equal to 40 and the value is " + value)
 } else {
     console.log("Conditions were not met");
 }
 
+number = 11;
+
+switch (number) {
+    case 0:
+        console.log("Number is zero");
+        break;
+
+    default:
+        console.log("The number is " + number)
+        break;
+}
