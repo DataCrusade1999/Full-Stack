@@ -89,3 +89,17 @@ val1+=val2;/*shorthand operator */
 console.log(val1);
 
 console.log(++val1); /*pre increment operator */
+
+/*conditional statements */
+
+var value = 30;
+
+if (value>=40) {
+    console.log("value is greater than or equal to 40 and the value is " + value);
+    
+} else if(value<=40) {
+    console.log("value is less than or equal to 40 and the value is " + value)
+} else {
+    console.log("Conditions were not met");
+}
+
