@@ -115,3 +115,29 @@ switch (number) {
         console.log("The number is " + number)
         break;
 }
+
+/* loops */
+
+var array = [1,2,3,4,5,6,7,8,9];
+
+for (let index = 0; index < array.length; index++) {
+
+    console.log(array[index]);
+    
+}
+
+var count = 0;
+while (count < array.length) {
+    console.log(array[count]);
+    count++;
+    
+}
+
+/*In do while loop the loop runs atleast one time */
+var counter = 0;
+do {
+    console.log(array[counter]);
+    counter++;   
+} while (counter < array.length);
+
+
