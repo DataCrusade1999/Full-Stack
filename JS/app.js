@@ -141,3 +141,25 @@ do {
 } while (counter < array.length);
 
 
+/*functions */
+
+
+console.log("Function Begins")
+
+
+function subtract(num1,num2) {
+
+    return num1-num2;
+    
+}
+
+console.log(subtract(56,98));
+
+
+function add(num1,num2) {
+
+    return num1+num2;
+    
+}
+
+console.log(add(subtract(4,4),add(4,0)));
