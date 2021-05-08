@@ -1,0 +1,11 @@
+.boxes {
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+
+.boxes div {
+    border: 1px solid black;
+    padding: 1em;
+}
