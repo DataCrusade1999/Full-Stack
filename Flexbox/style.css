@@ -1,11 +1,32 @@
 .boxes {
     display: flex;
-    flex-direction: column-reverse;
-    align-content: space-around;
+    flex-direction: row;
+    /*align-content: space-around;*/
     flex-wrap: wrap;
+    /*flex-flow: wrap-reverse*/;
+    justify-content: center;
+    align-items: center;
+    height: 5em;
+    border: 1px solid red;
 }
 
 .boxes div {
     border: 1px solid black;
     padding: 1em;
+}
+
+.div1 {
+    order: 1;
+}
+
+.div2 {
+    order: 2;
+}
+
+.div3 {
+    order: 3;
+}
+
+.div4 {
+    order: -5;
 }
