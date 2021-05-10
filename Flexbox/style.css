@@ -6,8 +6,8 @@
     /*flex-flow: wrap-reverse*/;
     justify-content: center;
     align-items: center;
-    height: 5em;
-    border: 1px solid red;
+    height: 10em;
+    border: 2px solid red;
 }
 
 .boxes div {
@@ -17,16 +17,32 @@
 
 .div1 {
     order: 1;
+    flex: 1;
+    text-align: center;
+    align-self: flex-end;
+    margin: 1em;
 }
 
 .div2 {
     order: 2;
+    flex: 1;
+    text-align: center;
+    align-self: flex-start;
+    margin: 1em;
 }
 
 .div3 {
     order: 3;
+    flex: 1;
+    text-align: center;
+    align-self: flex-end;
+    margin: 1em;
 }
 
 .div4 {
     order: -5;
+    flex: 1;
+    text-align: center;
+    align-self: flex-start;
+    margin: 1em;
 }
