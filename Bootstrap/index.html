@@ -12,8 +12,42 @@
         hence the overwriting bootstrap and if we put our custom css above bootstrap then bootstrap will overwrite our custom css.-->
     </head>
     <body>
-        <h1>Hello World</h1>
-
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 bg-success">
+                    <h1>Header</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2 col-lg-12 col-md-6 bg-primary ">
+                    <h1>Grid 1</h1>
+                </div>
+                <div class="col-sm-8 bg-danger">
+                    <h1>Grid 2</h1>
+                </div>
+                <div class="col-sm-2 bg-warning">
+                    <h1>Grid 3</h1>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <button class="btn btn-primary">Primary</button>
+                    <button class="btn btn-secondary">Secondary</button>
+                    <button class="btn btn-info">Info</button>
+                    <button class="btn btn-dark">Dark</button>
+               </div>
+               <div class="col">
+                <button class="btn btn-outline-primary btn-lg">Primary</button>
+                <button class="btn btn-outline-secondary">Secondary</button>
+                <button class="btn btn-outline-info">Info</button>
+                <button class="btn btn-outline-dark">Dark</button>
+                <button class="btn btn-outline-warning">Warning</button>
+                <a href="https://www.google.com/" class="btn btn-outline-danger btn-lg" target="_blank">Google</a>
+                <a href="https://www.google.com/" class="btn btn-secondary" target="_blank">Google</a>
+               </div>
+            </div>
+        </div>
 
 
 
