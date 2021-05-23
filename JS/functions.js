@@ -25,6 +25,10 @@ const areaOfCircle = (...radius) => {
 
 areaOfCircle(23,4,5,6,7,8,9);
 
+/*
+Arrow function is an alternative to write a function, however function declaration and arrow function have some minor differences.
+Arrow function uses arrow instead of the keyword function to declare a function.
+*/
 const sumOfNaturalNumber = (start,end) => {
     let sum = 0;
     for (let index = start; index <= end; index++) {
