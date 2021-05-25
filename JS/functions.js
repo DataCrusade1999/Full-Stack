@@ -83,3 +83,27 @@ const fullName = (name,firstName,lastName) => {
 }
 
 console.log(fullName(name,'Ashutosh',' Pandey'));
+
+/*
+SetInterval
+In JavaScript, we use setInterval higher order function to do some activity continuously with in some interval of time.
+The setInterval global method take a callback function and a duration as a parameter. 
+The duration is in milliseconds and the callback will be always called in that interval of time.
+*/
+
+function sayHello() {
+    console.log('Ashutosh Pandey');
+}
+
+setInterval(sayHello, 2000)
+
+/*
+setTimeout
+In JavaScript, we use setTimeout higher order function to execute some action at some time in the future. 
+The setTimeout global method take a callback function and a duration as a parameter. 
+The duration is in milliseconds and the callback wait for that amount of time.
+*/
+function sayHello() {
+    console.log('Hello');
+}
+setTimeout(sayHello, 2000);
