@@ -107,3 +107,16 @@ function sayHello() {
     console.log('Hello');
 }
 setTimeout(sayHello, 2000);
+
+
+/*
+forEach
+forEach: Iterate an array elements. We use forEach only with arrays. 
+It takes a callback function with elements, index parameter and array itself. The index and the array optional.
+*/
+
+let sum = 0;
+const numbers1 = [1,2,3,4,5];
+numbers1.forEach(num => console.log(num))
+
+console.log(sum)
