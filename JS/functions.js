@@ -65,3 +65,21 @@ function sumArrayValues(arr) {
   const numbers = [1, 2, 3, 4, 5];
       //calling a function
   console.log(sumArrayValues(numbers));
+
+
+// Higher Order Function
+
+/* 
+Callback
+A callback is a function which can be passed as parameter to other function. See the example below.
+*/
+
+const name = (firstName,lastName) => {
+    return firstName + lastName;
+}
+
+const fullName = (name,firstName,lastName) => {
+    return name(firstName,lastName);
+}
+
+console.log(fullName(name,'Ashutosh',' Pandey'));
