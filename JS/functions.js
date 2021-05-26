@@ -120,3 +120,36 @@ const numbers1 = [1,2,3,4,5];
 numbers1.forEach(num => console.log(num))
 
 console.log(sum)
+
+/**
+map
+map: Iterate an array elements and modify the array elements. 
+It takes a callback function with elements, index , array parameter and return a new array.
+ */
+
+const names = ['Ashutosh','Pandey']
+const namesToUpperCase = names.map((name) => name.toUpperCase())
+console.log(namesToUpperCase)
+
+/**
+* 
+filter
+Filter: Filter out items which full fill filtering conditions and return a new array.
+ */
+
+const countries = [
+    'Albania',
+    'Bolivia',
+    'Canada',
+    'Denmark',
+    'Ethiopia',
+    'Finland',
+    'Germany',
+    'Hungary',
+    'Ireland',
+    'Japan',
+    'Kenya',
+  ]
+
+const countriesContainingLand = countries.filter((country) => country.includes('land'))
+console.log(countriesContainingLand)
