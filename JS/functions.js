@@ -183,3 +183,24 @@ const arrayOfNumber = [3,4,5,'Ashutosh',8,9]
 const areAllNumber = arrayOfNumber.every((arrayOfNumber) => typeof arrayOfNumber === 'integers')
 
 console.log(areAllNumber)
+
+/*
+find
+find: Return the first element which satisfies the condition
+*/
+
+console.log(arrayOfNumber.find((whisker) => whisker > 4))
+
+/*
+findIndex
+findIndex: Return the position of the first element which satisfies the condition
+*/
+
+console.log(arrayOfNumber.findIndex((whisker) => whisker > 4))
+
+/*
+some
+some: Check if some of the elements are similar in one aspect. It returns boolean
+*/
+
+console.log(arrayOfNumber.some((whisker) => typeof whisker === 'string'))
