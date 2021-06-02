@@ -153,3 +153,33 @@ const countries = [
 
 const countriesContainingLand = countries.filter((country) => country.includes('land'))
 console.log(countriesContainingLand)
+
+
+/**
+reduce
+reduce: Reduce takes a callback function. The call back function takes accumulator, current, and optional initial value as a parameter and returns a single value.
+It is a good practice to define an initial value for the accumulator value. If we do not specify this parameter, by default accumulator will get array first value.
+If our array is an empty array, then Javascript will throw an error.
+*/
+const arrays = [1, 2, 3, 4, 5]
+const total = arrays.reduce((acc, cur) => acc + cur, 0)
+
+console.log(total)
+
+const elements = [3,4,5,6,8,9]
+const anotherTotal = elements.reduce(generic,0)
+
+function generic(acc,cur) {
+    return acc+cur;
+}
+
+console.log(anotherTotal)
+
+/*
+every
+every: Check if all the elements are similar in one aspect. It returns boolean
+*/
+const arrayOfNumber = [3,4,5,'Ashutosh',8,9]
+const areAllNumber = arrayOfNumber.every((arrayOfNumber) => typeof arrayOfNumber === 'integers')
+
+console.log(areAllNumber)
