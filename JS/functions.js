@@ -204,3 +204,31 @@ some: Check if some of the elements are similar in one aspect. It returns boolea
 */
 
 console.log(arrayOfNumber.some((whisker) => typeof whisker === 'string'))
+
+
+/**
+sort
+sort: The sort methods arranges the array elements either ascending or descending order. By default, the sort() method sorts values as strings.
+This works well for string array items but not for numbers. If number values are sorted as strings and it give us wrong result. 
+Sort method modify the original array. It is recommended to copy the original data before you start using sort method. 
+*/
+
+const products = ['Milk', 'Coffee', 'Sugar', 'Honey', 'Apple', 'Carrot','Banana'] // copy this data first in practice
+console.log(products.sort())
+
+/**
+Sorting Numeric values
+As you can see in the example below, 100 came first after sorted in ascending order. Sort converts items to string ,
+since '100' and other numbers compared, 1 which the beginning of the string '100' became the smallest. To avoid this, 
+we use a compare call back function inside the sort method, which return a negative, zero or positive.
+``const numbers = [9.81, 3.14, 100, 37]
+  console.log(numbers.sort()) //[100, 3.14, 37, 9.81]``
+*/
+
+const numbers2 = [9.81, 3.14, 100, 37, 100]
+numbers2.sort(function (a, b) {
+  return a - b
+})
+
+console.log(numbers2) 
+
