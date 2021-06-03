@@ -232,3 +232,26 @@ numbers2.sort(function (a, b) {
 
 console.log(numbers2) 
 
+/**
+Sorting Object Arrays
+When ever we sort objects in an array. We use the object key to compare. Lets see the example below.
+*/
+
+let users = [
+    { name: 'Asabeneh', age: 150 },
+    { name: 'Brook', age: 50 },
+    {name: 'Ashutosh', age: 21},
+    { name: 'Eyo', age: 100 },
+    { name: 'Elias', age: 22 },
+]
+
+let userlist = []
+const username = () => {
+    for (let index = 0; index < users.length; index++) {
+        let element = users[index]['name'];
+        userlist.push(element)
+    }
+}
+
+username();
+console.log(userlist.sort())
