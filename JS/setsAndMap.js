@@ -64,3 +64,66 @@ let f = d.filter((num) => E.has(num))
 let F = new Set(f)
 
 console.log(F)
+
+
+/**
+Difference of sets
+To find an the difference between two sets can be achieved using filter. Lets find the different of set G and set H (H - G)
+all those elements of H which do not belong to G.
+*/
+
+let g = [1, 2, 3, 4, 5]
+let h = [3, 4, 5, 6]
+
+let G = new Set(g)
+let H = new Set(h)
+
+let i = h.filter((num) => !G.has(num))
+let I = new Set(i)
+
+console.log(I)
+
+
+// Map
+
+
+countries = [
+    ['Finland', 'Helsinki'],
+    ['Sweden', 'Stockholm'],
+    ['Norway', 'Oslo'],
+]
+const map = new Map(countries)
+console.log(map)
+console.log(map.size)
+  
+
+// Adding values to the Map
+
+
+const countriesMap = new Map()
+console.log(countriesMap.size) 
+countriesMap.set('Finland', 'Helsinki')
+countriesMap.set('Sweden', 'Stockholm')
+countriesMap.set('Norway', 'Oslo')
+countriesMap.set('India', 'New Delhi')
+console.log(countriesMap)
+console.log(countriesMap.get('India'))
+
+/* 
+Checking key in Map
+Check if a key exist in a map using has method. It returns true or false.
+**/
+
+console.log(countriesMap.has('Finland'))
+
+
+// Getting all the values from the map using loop.
+
+for (const country of countriesMap) {
+    console.log(country)
+}
+
+for (const [country, city] of countriesMap){
+    console.log(country, city)
+}
+
