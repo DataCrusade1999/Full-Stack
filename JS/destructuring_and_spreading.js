@@ -117,3 +117,35 @@ var backEnd = ['Node', 'Express', 'MongoDB']
 var fullStack = [...frontEnd, ...backEnd]
 
 console.log(fullStack)
+
+
+// Spread operator to copy object
+// We can copy an object using a spread operator
+// We can also Modify or change the object while copying
+
+const devloper = {
+  name:'Ashutosh',
+  title:'Programmer',
+  country:'India',
+  city:'Kanpur'
+}
+
+const copiedDev = {...devloper,city:'Kanpur City'}
+console.log(copiedDev)
+
+
+// Spread operator with arrow function
+// Whenever we like to write an arrow function which takes unlimited number of arguments we use a spread operator. 
+// If we use a spread operator as a parameter, the argument passed when we invoke a function will change to an array.
+
+
+const sumAllNums = (...args) => {
+    let sum = 0
+    for (const num of args){
+      sum += num // shorthand for sum = sum + num.
+    }
+    return sum
+    
+}
+
+console.log(sumAllNums(1, 2, 3,4,5))
