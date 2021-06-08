@@ -8,11 +8,11 @@ var [numOne, numTwo, numThree] = myName
 console.log(numOne, numTwo, numThree)
 
 
-const fullStack = [
+var fullStack = [
     ['HTML', 'CSS', 'JS', 'React'],
     ['Node', 'Express', 'MongoDB']
 ]
-const [frontEnd, backEnd] = fullStack
+var [frontEnd, backEnd] = fullStack
 
 console.log(frontEnd)
 console.log(backEnd)
@@ -99,4 +99,21 @@ let [gem, fra, , ...nordicCountries] = countries
 console.log(gem)
 console.log(fra)
 console.log(nordicCountries)
-  
+
+
+// Spread operator to copy array
+var names = ['Sanjay','Naveen','Praveen']
+var firstName = [...names]
+var names1 = ['Kulkarni','Verma','Sharma']
+var lastName = [...names1]
+var wholeNames = [...names, ...names1]
+
+console.log(firstName)
+console.log(lastName)
+console.log(wholeNames)
+
+var frontEnd = ['HTML', 'CSS', 'JS', 'React']
+var backEnd = ['Node', 'Express', 'MongoDB']
+var fullStack = [...frontEnd, ...backEnd]
+
+console.log(fullStack)
