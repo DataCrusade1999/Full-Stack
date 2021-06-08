@@ -34,7 +34,7 @@ console.log(rest)
 
 
 // Destructuring during iteration
-const countries = [['Finland', 'Helsinki'], ['Sweden', 'Stockholm'], ['Norway', 'Oslo']]
+var countries = [['Finland', 'Helsinki'], ['Sweden', 'Stockholm'], ['Norway', 'Oslo']]
 
 for (const [country, city] of countries) {
 console.log(country, city)
@@ -76,3 +76,27 @@ var myDetails = {
 var { firstName: fName ,lastName: lName, age, middleName = undefined } = myDetails
 
 console.log(fName, lName, 'age',age, middleName)
+
+
+// Spread or Rest Operator
+// When we destructure an array we use the spread operator(...) to get the rest elements as array. 
+// In addition to that we use spread operator to spread arr elements to another array.
+// Spread operator to get the rest of array elements
+
+var countries = [
+    'Germany',
+    'France',
+    'Belgium',
+    'Finland',
+    'Sweden',
+    'Norway',
+    'Denmark',
+    'Iceland'
+]
+
+let [gem, fra, , ...nordicCountries] = countries
+
+console.log(gem)
+console.log(fra)
+console.log(nordicCountries)
+  
