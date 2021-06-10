@@ -73,3 +73,22 @@ var str = 'I am learning JavaScript'
 var pattern = /javascript/i
 var result = str.search(pattern)
 console.log(result)
+
+
+// Replacing a substring
+// replace(): Executes a search for a match in a string, and replaces the matched substring with a replacement substring.
+var txt = 'Python is the most beautiful language that a human begin has ever created.\
+I recommend python for a first programming language'
+
+matchReplaced = txt.replace(/python/gi, 'JavaScript') 
+console.log(matchReplaced)
+
+
+var txt = '%I a%m stu%%d%%e%n%t a%n%d %% I l%o%ve lear%n%in%g.\
+T%he%re i%s n%o%th%ing as m%ore r%ewarding a%s e%duc%at%i%on a%n%d e%m%p%ow%er%ing \
+my%se%lf% a%n%d o%t%h%e%r p%e%o%ple.\
+I fo%und lear%n%in%g m%ore i%n%t%er%%es%ting t%h%an any other %hobbies. \
+  D%o%es thi%s m%ot%iv%a%te %y%o%u to b%e a stu%%d%%e%n%t?'
+
+matches = txt.replace(/%/g, '')
+console.log(matches)
