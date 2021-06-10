@@ -11,7 +11,7 @@ RegExp parameters
 A regular expression takes two parameters. One required search pattern and an optional flag.
 
 Pattern
-A pattern could be a text or any form of pattern which some sort of similarity.
+A pattern could be a text or any form of pattern with some sort of similarity.
 For instance the word spam in an email could be a pattern we are interested to look for in an email
 or a phone number format number might be our interest to look for.
 
@@ -23,3 +23,53 @@ i: case insensitive flag(it searches for both lowercase and uppercase)
 m: multiline
 */
 
+// Creating a pattern with RegExp Constructor
+// Declaring regular expression without global flag and case insensitive flag.
+
+
+let regEx = new RegExp('love','gi')
+console.log(regEx)
+
+/**
+Creating a pattern without RegExp Constructor
+Declaring regular expression with global flag and case insensitive flag.
+
+let regEx= /love/gi
+ */
+
+
+// Testing for a match
+// test():Tests for a match in a string. It returns true or false.
+
+var str = 'I am learning JavaScript'
+var pattern = /javascript/i
+var result = pattern.test(str)
+console.log(result)
+
+/**
+Array containing all of the match
+match():Returns an array containing all of the matches, including capturing groups, or null if no match is found. 
+If we do not use a global flag, match() returns an array containing the pattern, index, input and group.
+*/
+
+
+// Without using 'g' or global flag.
+var str = 'I am learning JavaScript'
+var pattern = /javascript/i
+var result = str.match(pattern)
+console.log(result)
+
+
+// Using global flag.
+var str = 'I am learning JavaScript'
+var pattern = /javascript/gi
+var result = str.match(pattern)
+console.log(result)
+
+
+// search(): Tests for a match in a string. It returns the index of the match, or -1 if the search fails.
+
+var str = 'I am learning JavaScript'
+var pattern = /javascript/i
+var result = str.search(pattern)
+console.log(result)
