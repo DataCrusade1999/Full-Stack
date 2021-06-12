@@ -206,7 +206,7 @@ console.log(matches)  // ["6", "2019"]
 // It should have ^ starting and $ which is an end. output is true or false
 
 var pattern = /^[A-Z][a-z]{3,12}$/;
-var name = 'Asabeneh';
+var name = 'Ashutosh';
 var result = pattern.test(name)
 
 console.log(result) 
