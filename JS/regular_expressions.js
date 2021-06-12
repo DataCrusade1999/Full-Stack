@@ -125,3 +125,88 @@ r'apple|banana' mean either of an apple or a banana
 (): Capture and group
 */
 
+var pattern = /[lL]earning|[lL]anguage/g // this square bracket mean either L or l
+var txt = 'JavaScript is the most beautiful language that a human begin has ever created.I recommend JavaScript for a first programming language \
+I am student and  I love learning.There is nothing as more rewarding as education and empowering myself and other people. \
+I found learning more interesting than any other hobbies.Does this motivate you to be a student? '
+
+var matches = txt.match(pattern)
+
+console.log(matches)  
+
+
+// Escape character(\) in RegExp
+
+
+var pattern = /\d+/g  // d is a special character which means digits
+var txt = 'This regular expression example was made in October 08,  1999.'
+var matches = txt. match(pattern)
+
+console.log(matches)  // ["12", "2020"], this is not what we want
+
+
+// Period(.)
+
+var pattern = /[a].?/g  // this square bracket means a and . means any character except new line
+var txt = 'Apple and banana are fruits'
+var matches = txt.match(pattern)
+
+console.log(matches)  // ["an", "an", "an", "a ", "ar"]
+
+
+// Zero or more times(*)
+// Zero or many times. The pattern could may not occur or it can occur many times.
+
+
+var pattern = /[a].*/g  //. any character, + any character one or more times 
+var txt = 'Apple and banana are fruits'
+var matches = txt.match(pattern)
+
+console.log(matches)  // ['and banana are fruits']
+
+// Zero or one times(?)
+// Zero or one times. The pattern could may not occur or it may occur once.
+
+var txt = 'I am not sure if there is a convention how to write the word e-mail.\
+Some people write it email others may write it as Email or E-mail.'
+var pattern = /[Ee]-?mail/g  // ? means optional
+matches = txt.match(pattern)
+
+console.log(matches)  // ["e-mail", "email", "Email", "E-mail"]
+
+// Quantifier in RegExp
+// We can specify the length of the substring we look for in a text, using a curly bracket.
+// Lets imagine, we are interested in substring that their length are 4 characters
+
+var txt = 'JavaScript is the most beautiful language that a human begin has ever created.I recommend JavaScript for a first programming language \
+I am student and  I love learning.There is nothing as more rewarding as education and empowering myself and other people. \
+I found learning more interesting than any other hobbies.Does this motivate you to be a student? '
+var pattern = /[i]{1}/g   
+var matches = txt.match(pattern)
+console.log(matches)  
+
+
+// Cart ^
+// Starts with
+var txt = 'JavaScript is the most beautiful language that a human begin has ever created.I recommend JavaScript for a first programming language \
+I am student and  I love learning.There is nothing as more rewarding as education and empowering myself and other people. \
+I found learning more interesting than any other hobbies.Does this motivate you to be a student? '
+var pattern = /^JavaScript/gi 
+var matches = txt.match(pattern)
+console.log(matches)  
+
+
+// Negation
+var txt = 'This regular expression example was made in December 6,  2019.'
+var pattern = /[^A-Za-z,. ]+/g  // ^ in set character means negation, not A to Z, not a to z, no space, no coma no period
+var matches = txt.match(pattern)
+console.log(matches)  // ["6", "2019"]
+
+// Exact match
+// It should have ^ starting and $ which is an end. output is true or false
+
+var pattern = /^[A-Z][a-z]{3,12}$/;
+var name = 'Asabeneh';
+var result = pattern.test(name)
+
+console.log(result) 
