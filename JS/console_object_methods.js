@@ -14,4 +14,3 @@ In addition to the famous, console.log() method, the console provides other more
 // console.log()
 // We use console.log() to show output on the browser console. We can substitute values and also we can style the logging out put using %c.
 
-
