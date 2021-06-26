@@ -47,13 +47,23 @@ This refers to the class itself.
 */
 
 class Employee {
-    constructor(firstName, lastName) {
-      console.log(this) // Check the output from here
+    constructor(firstName = 'David ', lastName = 'Holmes') {
+      // console.log(this) // Check the output from here
       this.firstName = firstName
       this.lastName = lastName
+      this.fullName = firstName + lastName
   }
 }
 
-var person = new Employee('Ashutosh', 'Pandey')
+var employee0 = new Employee('Ashutosh ', 'Pandey')
+var employee1 = new Employee('Asabeneh ', 'Yetayeh')
+var employee2 = new Employee('Lidiya ', 'Tekle')
+var employee3 = new Employee('Abraham ', 'Yetayeh')
+var employee4 = new Employee()
 
-console.log(person)
+console.log(employee0.fullName)
+console.log(employee1.fullName)
+console.log(employee2.fullName)
+console.log(employee3.fullName)
+console.log(employee4.fullName)
+console.log(employee4)
