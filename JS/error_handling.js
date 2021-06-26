@@ -59,5 +59,3 @@ let square = 2 x 2
 console.log(square)
 
 console.log('Hello, world")
-
-  
