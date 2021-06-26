@@ -11,3 +11,49 @@ In the object section, we saw how to create an object literal. Object literal is
 we have to write it. However, class allows to create many objects. This helps to reduce amount of code and repetition of code.
  */
 
+// Defining a classes
+// To define a class in JavaScript we need the keyword class , the name of a class in CamelCase and block code(two curly brackets). 
+// Let us create a class name Person.
+
+/**
+Example:
+class Person {
+  // code goes here
+}
+*/
+
+/**
+Class Instantiation
+Instantiation class means creating an object from a class. We need the keyword new and we call the name of the class after the word new.
+
+Let us create a person object from our Person class.
+ */
+
+class Person {
+    // code goes here
+}
+var person = new Person()
+console.log(person)
+
+
+/**
+Class Constructor
+The constructor is a builtin function which allows as to create a blueprint for our object. The constructor function starts with a keyword constructor
+followed by a parenthesis. Inside the parenthesis we pass the properties of the object as parameter. We use the this keyword to attach the constructor 
+parameters with the class.
+
+The following Person class constructor has firstName and lastName property. These properties are attached to the Person class using this keyword.
+This refers to the class itself.
+*/
+
+class Employee {
+    constructor(firstName, lastName) {
+      console.log(this) // Check the output from here
+      this.firstName = firstName
+      this.lastName = lastName
+  }
+}
+
+var person = new Employee('Ashutosh', 'Pandey')
+
+console.log(person)
