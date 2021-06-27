@@ -53,6 +53,10 @@ class Employee {
       this.lastName = lastName
       this.fullName = firstName + lastName
   }
+  getCityName() {
+    const cityName = this.lastName + ' ' + 'City'
+    return cityName
+  }
 }
 
 var employee0 = new Employee('Ashutosh ', 'Pandey')
@@ -67,3 +71,19 @@ console.log(employee2.fullName)
 console.log(employee3.fullName)
 console.log(employee4.fullName)
 console.log(employee4)
+
+/**
+Class methods
+The constructor inside a class is a builtin function which allow us to create a blueprint for the object. In a class we can create class methods.
+Methods are JavaScript functions inside the class. Let us create some class methods.
+*/
+console.log(employee0.getCityName())
+
+
+/**
+Properties with initial value
+When we create a class for some properties we may have an initial value. For instance if you are playing a game, you starting score will be zero.
+So, we may have a starting score or score which is zero. In other way, we may have an initial skill and we will acquire some skill after some time.
+*/
+
+console.log(employee0.score)
