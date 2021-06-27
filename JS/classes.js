@@ -52,14 +52,48 @@ class Employee {
       this.firstName = firstName
       this.lastName = lastName
       this.fullName = firstName + lastName
+      this.score = 0
+      this.skills = []
   }
   getCityName() {
     const cityName = this.lastName + ' ' + 'City'
     return cityName
   }
+
+  get getFirstName() {
+    return this.firstName
+  }
+
+  /**
+   * @param {string | number} score
+   */
+  set setScore(score){
+    this.score =+ score
+
+  }
+
+  /**
+   * @param {any} skill
+   */
+  set setSkill(skill) {
+    this.skills.push(skill)
+  }
+
+  getPersonalInfo() {
+    var text = `Name of the employee is ${this.firstName} ${this.lastName} He lives in ${this.city} and his skills are ${this.skills} etc.`
+    return text
+
+  }
+
+  /**
+   * @param {any} city
+   */
+  set setCity(city){
+    this.city = city
+  }
 }
 
-var employee0 = new Employee('Ashutosh ', 'Pandey')
+var employee0 = new Employee('Ashutosh', 'Pandey')
 var employee1 = new Employee('Asabeneh ', 'Yetayeh')
 var employee2 = new Employee('Lidiya ', 'Tekle')
 var employee3 = new Employee('Abraham ', 'Yetayeh')
@@ -86,4 +120,36 @@ When we create a class for some properties we may have an initial value. For ins
 So, we may have a starting score or score which is zero. In other way, we may have an initial skill and we will acquire some skill after some time.
 */
 
+
+/**
+getter
+The get method allow us to access value from the object. We write a get method using keyword get followed by a function.
+Instead of accessing properties directly from the object we use getter to get the value. See the example bellow
+*/
+console.log(employee0.getFirstName)
+
+/**
+setter
+The setter method allow us to modify the value of certain properties. We write a setter method using keyword set followed by a function.
+See the example bellow.
+*/
+
+employee0.setScore = 01;
+employee0.setSkill = 'Gliding'
 console.log(employee0.score)
+employee0.setSkill = 'Jumping'
+console.log(employee0.skills)
+
+
+employee0.setCity = 'Kanpur'
+console.log(employee0.city)
+
+console.log(employee0.getPersonalInfo())
+
+/**
+Static method
+The static keyword defines a static method for a class. Static methods are not called on instances of the class. 
+Instead, they are called on the class itself. These are often utility functions, such as functions to create or clone objects.
+An example of static method is Date.now(). The now method is called directly from the class.
+*/
+
