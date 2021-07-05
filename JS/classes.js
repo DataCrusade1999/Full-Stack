@@ -160,3 +160,9 @@ An example of static method is Date.now(). The now method is called directly fro
 */
 
 console.log(Employee.favoriteSkill())
+
+/**
+Inheritance
+Using inheritance we can access all the properties and the methods of the parent class. This reduces repetition of code. 
+If you remember, we have a Person parent class and we will create children from it. Our children class could be student, teach etc.
+*/
