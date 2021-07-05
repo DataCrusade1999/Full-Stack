@@ -72,6 +72,12 @@ class Employee {
 
   }
 
+  static favoriteSkill() {
+    var skills = ['HTML', 'CSS', 'Javascript', 'React', 'Python', 'Node']
+    var index = Math.floor(Math.random() * skills.length)
+    return skills[index]
+  }
+
   /**
    * @param {any} skill
    */
@@ -153,3 +159,4 @@ Instead, they are called on the class itself. These are often utility functions,
 An example of static method is Date.now(). The now method is called directly from the class.
 */
 
+console.log(Employee.favoriteSkill())
