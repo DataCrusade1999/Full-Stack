@@ -2,7 +2,7 @@
 In this repository we will learn both client and server side of web-development.
 
 
-What it means to be a full-stack web developer?
+## What it means to be a full-stack web developer?
 
 A full stack web developer is a person who can develop both client and server software.
 
